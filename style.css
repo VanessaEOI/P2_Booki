@@ -1,0 +1,784 @@
+/* General */
+.box {
+    box-sizing: border-box; /* Opera/IE 8+ */
+    -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+ /* box-sizing est appliqué seulement à cette classe */
+ } 
+
+* {
+    box-sizing: border-box;
+   /* box-sizing est appliqué à tous les éléments */
+   font-family: 'Raleway', sans-serif;
+   }
+
+p{
+    overflow: auto;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+/* General */
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+header img{
+    margin: 20px 40px;
+    width: 100px;
+}
+
+header nav{
+    height: 100%;
+    display: flex;
+}
+
+header nav a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding: 20px;
+}
+
+header nav a:hover{
+    border-top: 1px solid #0065FC;
+    color: #0065FC;
+}
+/* Header */
+
+/* Main */
+
+main{
+    margin: 0 20px;
+}
+
+/******** SECTION 1 ********/
+
+h1{
+    font-size: 20px;
+}
+
+form{
+    position: relative;
+    height: 60px;
+}
+
+form i{
+    padding: 15px;
+}
+
+form p{
+    position: absolute;
+    margin: 0;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    max-width: 100%;
+}
+
+label{
+    background-color: #F2F2F2;
+}
+
+#search{
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    width: 65%;
+    text-overflow: ellipsis;
+}
+
+::-webkit-input-placeholder{
+    color: black;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+::-moz-placeholder{
+    color: black;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+:-ms-input-placeholder{
+    color: black;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+::-ms-input-placeholder{
+    color: black;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+::placeholder{
+    color: black;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+input, button{
+    border: none;
+}
+
+#button-search{
+    background-color: #0065FC;
+    color: white;
+    font-weight: 700;
+}
+
+#icon-search{
+    background-color: #0065FC;
+    color: white;
+    font-weight: 700;
+}
+
+#filters{
+    display: flex;
+}
+
+#filters-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#filters-container p{
+    font-weight: 700;
+    text-align: center;
+}
+
+.icon-filter{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px 0 0;
+    border-radius: 50px;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid #F2F2F2;
+    overflow-x: auto;
+}
+
+#filters button{
+    font-weight: 700;
+    overflow: visible;
+}
+
+.icon-filter i{
+    background-color: #DEEBFF;
+    border: 3px solid #DEEBFF;
+    border-radius: 50px;
+    color: #0065FC;
+    width: 50px;
+    height: 50px;
+    margin: -2% 2% -2% -2%;
+    font-size: 20px;
+    line-height: 42px;
+}
+
+.icon-filter:hover{
+    background-color: #0065FC;
+    color: white;
+}
+
+#info{
+    display: flex;
+    position: relative;
+}
+
+.fa-info{
+    color: #0065FC;
+    font-size: 10px;
+    border-radius: 100%;
+    border: 2px solid #F2F2F2;
+    padding: 5px;
+    position: absolute;
+    top: 25%;
+    width: 25px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#info p{
+    margin-left: 30px;
+}
+/******** SECTION 1 ********/
+
+/******** SECTION 2 ********/
+
+#section-2{
+    display: flex;
+    justify-content: space-around;
+}
+
+h2{
+    margin:2%;
+    font-size: 16px;
+}
+
+/* Couleurs étoiles */
+.blue{
+    font-size: 10px;
+    color: #0065FC;
+}
+
+.grey{
+    font-size: 10px;
+    color: grey;
+}
+/* Couleurs étoiles */
+
+/* Bloc left Hébergement à Marseille */
+#section-2-left{
+    width: 70%;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    margin: 1%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#section-2-left a{
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+
+#blocs-marseille{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bloc-left-parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2%;
+}
+
+.bloc-left-card{
+    width: 30%;
+    background-color: white;
+    box-shadow: 0px 2px 5px #999999c7;
+    border-radius: 15px;
+    padding: 0.5%;
+    margin: 1.5%;
+}
+
+.bloc-left{
+    color: black; 
+    text-decoration: none;
+}
+
+.bloc-left-card:hover{
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+
+.bloc-left-image{
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.bloc-left-image img{
+    width: 100%;
+    height: 80px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.bloc-left-body{
+    padding: 2% 5%;
+}
+
+h3{
+    font-size: 12px;
+    font-weight: 700;
+    margin: 1% 0;
+}
+
+.bloc-left-body p{
+    font-size: 11px;
+    font-weight: normal;
+    margin: 2% 0 0 0;
+}
+
+#show-more{
+    margin: 2%;
+}
+
+/* Bloc left Hébergement à Marseille */
+
+/* Bloc right Les plus populaires */
+
+#section-2-right{
+    width: 30%;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    margin: 1%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+#right-title{
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+#right-title i{
+    line-height: 30px;
+}
+
+#blocs-pop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+}
+
+.bloc-right-parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2%;
+}
+
+.bloc-right-card{
+    width: 100%;
+    height: 105px;
+    background-color: white;
+    box-shadow: 0px 2px 5px #999999c7;
+    border-radius: 15px;
+    margin: 5%;
+}
+
+.bloc-right{
+    color: black; 
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    overflow: hidden;
+    padding: 1%;
+}
+
+.bloc-right-card:hover{ 
+    -webkit-filter: grayscale(100%); 
+            filter: grayscale(100%);
+}
+
+.bloc-right-image{
+    display: flex;
+    padding: 1%;
+    width: 100px;
+    height: 100px;
+}
+
+.bloc-right img{
+    width: 100px;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+
+.bloc-right-body{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.bloc-right-body p{
+    font-size: 11px;
+    font-weight: normal;
+    margin: 2% 0;
+}
+
+/* Bloc right Les plus populaires */
+
+/******** SECTION 2 ********/
+
+/******** SECTION 3 ********/
+
+#section-3{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    margin: 2% 0;
+}
+
+#section-3 h2{
+    margin: 1%;
+}
+
+#blocs-activity{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bloc-list{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.bloc-list-left{
+    overflow: hidden;
+    width: 50%;
+    margin: 2%;
+    box-shadow: 0px 2px 5px #999999c7;
+    border-radius: 25px;
+}
+
+.bloc-list-left img{
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.bloc-list-left h3{
+    margin: 6%;
+}
+
+.bloc-list-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2%;
+    width: 50%;
+}
+
+.bloc-list-right h3{
+    margin: 6%;
+}
+
+.bloc-list-right img{
+    width: 100%;
+    height: 110px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.bloc-list-right-topbottom{
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px #999999c7;
+}
+
+/******** SECTION 3 ********/
+
+/* footer */
+
+footer{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1%;
+}
+
+.footer-section{
+    width: 33.33%;
+    padding: 0 2%;
+}
+
+footer ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+footer li{
+    padding: 2% 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+/* footer */
+
+/* Media Queries */
+
+@media screen and (max-width: 300px){
+
+    #right-title i{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .bloc-right-card{
+        width: 100% !important;
+    }
+
+    .bloc-left-card{
+        width: 100% !important;
+    }
+
+    .bloc-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bloc-list-left{
+        width: 100%;
+    }
+
+    .bloc-list-right{
+        width: 100%;
+    }
+
+    .bloc-list-left img{
+        width: 100%;
+        height: 110px;
+    }
+
+    .bloc-list-right-topbottom{
+        margin: 3% 0;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 570px){
+    h1,h2,h3,h4,h5,h6,p,a,i,button{
+        font-size: smaller !important;
+    }
+
+    form p{
+        width: 100%;
+    }
+
+    #filters-container p{
+        width: 100%;
+        text-align: left;
+    }
+
+    .icon-filter i{
+        width: 40px;
+        height: 40px;
+        line-height: 33px;
+    }
+
+    #right-title i{
+        line-height: 33px!important;
+    }
+}
+
+@media screen and (min-width: 769px){
+    #icon-search{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 890px) and (min-width: 768px) {
+    #section-2{
+        flex-wrap: wrap;
+    }
+    #section-2-left{
+        width: 100%;
+    }
+
+    #section-2-right{
+        width: 100%;
+    }
+
+    #blocs-pop{
+        flex-direction: row;
+    }
+
+    .bloc-right-card{
+        width: 33%;
+        height: 110px;
+        margin: 2%;
+    }
+
+    .bloc-list{
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 768px){
+
+    main{
+        margin:0
+    }
+
+    /********* HEADER ********/
+    header{
+        flex-direction: column;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+    }
+
+    header nav{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    header nav a{
+        width: 50%;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    header nav a:hover{
+        border-top: 1px solid rgba(0, 0, 0, 0);
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;
+    }
+/********* HEADER ********/
+
+/********* SECTION  1 ********/
+    #section-1{
+        margin: 20px;
+    }
+
+    form{
+        margin-top:30px;
+    }
+
+    form p{
+        justify-content: center;
+    }
+
+    label{
+        border-radius: 15px 0 0 15px;
+    }
+
+    #button-search{
+        display: none;
+    }
+
+    #icon-search{
+        border-radius: 15px;
+        margin-left: -5%;
+    }
+
+    #filters p{
+        margin-top: 8%;
+    }
+
+    #filters-container{
+        margin-top: 2%;
+    }
+
+    .icon-filter{
+        margin: 10px;
+    }
+
+    #filters button {
+        font-size: 15px;
+    }
+
+    /********* SECTION  1 ********/
+
+    /********* SECTION  2 ********/
+    #section-2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    #section-2-left{
+        width: 100%;
+        margin: auto;
+        background-color: transparent;
+        padding: 4%;
+    }
+    
+    #section-2-right{
+        width: 100%;
+        margin: 20px auto;
+        padding: 4%;
+        border-radius: 0;
+    }
+
+    #right-title i {
+        line-height: 40px;
+    }
+
+    .bloc-right-card{
+        width: 50%;
+        margin: 2%;
+    }
+    
+    .bloc-left-parent {
+        flex-direction: column;
+    }
+
+    .bloc-left-card{
+        width: 100%;
+        margin: 2% 0;
+        padding: 1%;
+    }
+
+    #blocs-marseille{
+        justify-content: center;
+    }
+
+    .bloc-left-card{
+        width: 50%;
+        margin: 2%;
+    }
+
+    /********* SECTION  2 ********/
+
+    /********* SECTION  3 ********/
+
+    #section-3{
+        margin: 2%;
+    }
+
+    #section-3 h2{
+        margin: 3%;
+    }
+
+    .bloc-list{
+        width: 100%;
+    }
+
+    /********* SECTION  3 ********/
+}
+
+@media screen and (min-width: 992px){
+
+    body{
+        width: 992px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1088px){
+    #filters{
+        flex-wrap: wrap;
+        margin: 1%;
+    }
+}
+
+/* Media Queries */
