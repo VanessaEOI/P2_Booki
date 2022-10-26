@@ -1,4 +1,4 @@
-## OpenClassrooms Project 2
+## ![logo OpenClassrooms](https://raw.githubusercontent.com/thierry-laval/archives/master/images/Logo_OpenClassrooms.png)  OpenClassrooms Project 2
 
 Here is the introduction project to HTML & CSS from OpenClassrooms.
 
